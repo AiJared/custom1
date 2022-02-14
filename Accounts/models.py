@@ -91,7 +91,7 @@ class Profile(models.Model):
     )
     # You can add your own fields
     class Meta:
-        Abstract = True
+        abstract = True
 
 class Teacher(Profile):
     pass # You can add teacher's fields
