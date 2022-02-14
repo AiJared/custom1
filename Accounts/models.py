@@ -32,7 +32,7 @@ class customManager(BaseUserManager):
         )
         return user
 
-    def create_super_user(self, email, username, password=None):
+    def create_superuser(self, email, username, password=None):
         user = self.create_user(
             email, username, password, is_active=True,
             is_admin=True, is_staff=True, is_student=False, is_teacher=False
